@@ -7,11 +7,20 @@ module.exports = {
   ],
   theme: {
     extend: {
+      fontFamily: {
+        customFont: ['var(--font-vip)', 'sans-serif'],
+      },
+      backgroundImage: {
+        'hero-pattern': "url('/css_sprites.png')",
+        'about-pattern': "url('/rocky.png')",
+        'preloader-pattern': "url('/green-hand-draw-visual-thinking.png')"
+      },
       colors: {
-        background: "var(--background)",
-        foreground: "var(--foreground)",
+        'custom-blue': '#4ba3c3',
+        'custom-yellow': '#fcd34d',
       },
     },
   },
   plugins: [],
+  darkMode: "class"
 };

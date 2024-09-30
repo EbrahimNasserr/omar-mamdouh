@@ -2,26 +2,94 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
-}
-
 body {
-  color: var(--foreground);
-  background: var(--background);
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: var(--font-almarai), sans-serif;
+  @apply dark:text-slate-200
 }
 
-@layer utilities {
-  .text-balance {
-    text-wrap: balance;
-  }
+.before::before {
+  content: "1";
+  position: absolute;
+  background-color: #4ba3c3;
+  width: 25px;
+  border-radius: 8px;
+  height: 25px;
+  display: flex;
+  padding-right: 10px;
+  justify-content: start;
+  align-items: center;
+  right: -25px;
+  color: aliceblue;
+  transition: all 1s;
+}
+
+.before {
+  transition: all 1s;
+}
+
+.before:hover {
+  color: aliceblue;
+}
+
+.before:hover::before {
+  width: 170px;
+  z-index: -1;
+}
+
+.before2::before {
+  content: "2";
+  position: absolute;
+  background-color: #4ba3c3;
+  width: 25px;
+  border-radius: 8px;
+  height: 25px;
+  display: flex;
+  padding-right: 10px;
+  justify-content: start;
+  align-items: center;
+  right: -25px;
+  color: aliceblue;
+  transition: all 1s;
+}
+
+.before2 {
+  transition: all 1s;
+}
+
+.before2:hover {
+  color: aliceblue;
+}
+
+.before2:hover::before {
+  width: 170px;
+  z-index: -1;
+}
+
+.before3::before {
+  content: "3";
+  position: absolute;
+  background-color: #4ba3c3;
+  width: 25px;
+  border-radius: 8px;
+  height: 25px;
+  display: flex;
+  padding-right: 10px;
+  justify-content: start;
+  align-items: center;
+  right: -25px;
+  color: aliceblue;
+  transition: all 1s;
+}
+
+.before3 {
+  transition: all 1s;
+}
+
+.before3:hover {
+  color: aliceblue;
+}
+
+.before3:hover::before {
+  width: 170px;
+  z-index: -1;
 }
